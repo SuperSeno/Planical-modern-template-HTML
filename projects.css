@@ -5,4 +5,10 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.projects-image {
+  width: 844px;
+  height: 785px;
+  object-fit: cover;
 }
