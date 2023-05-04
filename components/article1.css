@@ -67,6 +67,19 @@
 
 
 
+.article1-root-class-name6 {
+  top: 0px;
+  left: 0px;
+  position: 0px;
+  align-self: center;
+}
+.article1-root-class-name7 {
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: auto;
+  position: 0px;
+}
 @media(max-width: 991px) {
   .article1-card {
     padding-top: var(--dl-space-space-twounits);
