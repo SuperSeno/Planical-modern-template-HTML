@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Projects - SenoWeb</title>
-    <meta property="og:title" content="Projects - SenoWeb" />
+    <title>Turtle-or-fish-project - SenoWeb</title>
+    <meta property="og:title" content="Turtle-or-fish-project - SenoWeb" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -52,10 +52,10 @@
         type="text/javascript"
         src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
       ></script>
-      <link href="./projects.css" rel="stylesheet" />
+      <link href="./turtle-or-fish-project.css" rel="stylesheet" />
 
-      <div class="projects-container">
-        <nav class="navbar-navbar navbar-root-class-name1">
+      <div class="turtle-or-fish-project-container">
+        <nav class="navbar-navbar navbar-root-class-name4">
           <a href="index.html" class="navbar-text">SenoWeb</a>
           <div class="navbar-nav-content">
             <div class="navbar-nav-links"></div>
@@ -149,99 +149,10 @@ listenForUrlChangesMobileMenu()
             </div>
           </a>
         </nav>
-        <div>
-          <dangerous-html
-            html="<script>
-    /*
-Accordion - Code Embed
-*/
-
-/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
-the Accordions will still work*/
-
-const listenForUrlChangesAccordion = () => {
-      let url = location.href;
-      document.body.addEventListener(
-        'click',
-        () => {
-          requestAnimationFrame(() => {
-            if (url !== location.href) {
-              runAccordionCodeEmbed();
-              url = location.href;
-            }
-          });
-        },
-        true
-      );
-    };
-
-
-const runAccordionCodeEmbed = () => {
-    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
-    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
-    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
-
-    accordionContents.forEach((accordionContent) => {
-        accordionContent.style.display = 'none'; //Hides all accordion contents
-    });
-
-    accordionContainers.forEach((accordionContainer, index) => {
-        accordionContainer.addEventListener('click', () => {
-            accordionContents.forEach((accordionContent) => {
-            accordionContent.style.display = 'none'; //Hides all accordion contents
-            });
-
-            accordionIcons.forEach((accordionIcon) => {
-                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
-            });
-
-            accordionContents[index].style.display = 'flex'; // Shows accordion content
-            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
-        });
-    });
-}
-
-runAccordionCodeEmbed()
-listenForUrlChangesAccordion()
-
-/*
-Here's what the above is doing:
-    1. Selects all accordion containers, contents, and icons
-    2. Hides all accordion contents
-    3. Adds an event listener to each accordion container
-    4. When an accordion container is clicked, it:
-        - Hides all accordion contents
-        - Resets all icon transforms to 0deg (default)
-        - Checks if this container has class 'accordion-open'
-            - If it does, it removes class 'accordion-open'
-            - If it doesn't, it:
-                - Removes class 'accordion-open' from all containers
-                - Adds class 'accordion-open' to this container
-                - Shows accordion content
-                - Rotates accordion icon 180deg
-*/
-</script>"
-          ></dangerous-html>
-        </div>
-        <div class="projects-container1">
-          <section class="article1-card">
-            <main class="article1-content">
-              <header class="article1-header">
-                <h1 class="article1-header1"><span>What am I?</span></h1>
-              </header>
-              <p class="article1-description">
-                <span>
-                  This project determines if you are a turtle or a fish.
-                </span>
-              </p>
-              <a href="turtle-or-fish-project.html" class="article1-navlink">
-                <div class="article1-button">
-                  <p class="article1-text"><span>Read -&gt;</span></p>
-                </div>
-              </a>
-            </main>
-          </section>
-        </div>
+        <iframe
+          src="https://wheelofnames.com/4xc-rxx"
+          class="turtle-or-fish-project-iframe"
+        ></iframe>
       </div>
     </div>
   </body>
