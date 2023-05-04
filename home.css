@@ -116,6 +116,9 @@
   font-weight: 500;
   line-height: 24px;
 }
+.navbar-navlink1 {
+  display: contents;
+}
 .navbar-get-started2 {
   display: flex;
   text-decoration: none;
@@ -129,7 +132,7 @@
   font-weight: 500;
   line-height: 24px;
 }
-.navbar-navlink1 {
+.navbar-navlink2 {
   display: contents;
 }
 .navbar-get-started3 {
@@ -278,6 +281,9 @@
   align-items: center;
   flex-direction: row;
 }
+.home-navlink {
+  display: contents;
+}
 .home-get-started {
   display: flex;
   text-decoration: none;
@@ -291,7 +297,7 @@
   font-weight: 500;
   line-height: 24px;
 }
-.home-navlink {
+.home-navlink1 {
   display: contents;
 }
 .home-get-started1 {

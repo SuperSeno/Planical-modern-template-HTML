@@ -116,6 +116,9 @@
   font-weight: 500;
   line-height: 24px;
 }
+.navbar-navlink1 {
+  display: contents;
+}
 .navbar-get-started2 {
   display: flex;
   text-decoration: none;
@@ -129,7 +132,7 @@
   font-weight: 500;
   line-height: 24px;
 }
-.navbar-navlink1 {
+.navbar-navlink2 {
   display: contents;
 }
 .navbar-get-started3 {
