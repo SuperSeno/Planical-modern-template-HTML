@@ -103,7 +103,7 @@
 .navbar-navlink {
   display: contents;
 }
-.navbar-get-started1 {
+.navbar-home {
   display: flex;
   text-decoration: none;
   background-color: #448cff;
@@ -119,7 +119,7 @@
 .navbar-navlink1 {
   display: contents;
 }
-.navbar-get-started2 {
+.navbar-get-started1 {
   display: flex;
   text-decoration: none;
   background-color: #448cff;
@@ -135,7 +135,7 @@
 .navbar-navlink2 {
   display: contents;
 }
-.navbar-get-started3 {
+.navbar-get-started2 {
   text-decoration: none;
   background-color: #2A2A2A;
 }
@@ -150,14 +150,15 @@
 
 
 
+
 @media(max-width: 991px) {
+  .navbar-home {
+    flex: 1;
+  }
   .navbar-get-started1 {
     flex: 1;
   }
   .navbar-get-started2 {
-    flex: 1;
-  }
-  .navbar-get-started3 {
     flex: 1;
   }
 }
@@ -186,15 +187,15 @@
     margin-bottom: var(--dl-space-space-twounits);
     justify-content: center;
   }
+  .navbar-home {
+    padding-top: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
   .navbar-get-started1 {
     padding-top: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-unit);
   }
   .navbar-get-started2 {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
-  }
-  .navbar-get-started3 {
     display: none;
   }
 }
