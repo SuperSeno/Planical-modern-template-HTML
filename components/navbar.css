@@ -100,8 +100,12 @@
   font-stretch: normal;
   text-decoration: none;
 }
+.navbar-navlink {
+  display: contents;
+}
 .navbar-get-started1 {
   display: flex;
+  text-decoration: none;
   background-color: #448cff;
 }
 .navbar-text2 {
