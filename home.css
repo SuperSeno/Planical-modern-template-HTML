@@ -129,7 +129,11 @@
   font-weight: 500;
   line-height: 24px;
 }
+.navbar-navlink1 {
+  display: contents;
+}
 .navbar-get-started3 {
+  text-decoration: none;
   background-color: #2A2A2A;
 }
 .navbar-text4 {
@@ -140,6 +144,7 @@
   font-weight: 500;
   line-height: 24px;
 }
+
 
 
 @media(max-width: 991px) {
@@ -286,7 +291,11 @@
   font-weight: 500;
   line-height: 24px;
 }
+.home-navlink {
+  display: contents;
+}
 .home-get-started1 {
+  text-decoration: none;
   background-color: #2A2A2A;
 }
 .home-text8 {

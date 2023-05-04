@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SenoWeb</title>
-    <meta property="og:title" content="SenoWeb" />
+    <title>Blog - SenoWeb</title>
+    <meta property="og:title" content="Blog - SenoWeb" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -52,10 +52,10 @@
         type="text/javascript"
         src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
       ></script>
-      <link href="./home.css" rel="stylesheet" />
+      <link href="./blog.css" rel="stylesheet" />
 
-      <div class="home-container">
-        <nav class="navbar-navbar navbar-root-class-name">
+      <div class="blog-container">
+        <nav class="navbar-navbar navbar-root-class-name2">
           <span class="navbar-text">SenoWeb</span>
           <div class="navbar-nav-content">
             <div class="navbar-nav-links"></div>
@@ -154,119 +154,6 @@ listenForUrlChangesMobileMenu()
             </div>
           </a>
         </nav>
-        <section class="home-section">
-          <div class="home-hero">
-            <div class="home-content">
-              <main class="home-main">
-                <header class="home-header">
-                  <h1 class="home-heading">
-                    <span>Welcome To</span>
-                    <span class="home-text1">SenoWeb</span>
-                  </h1>
-                  <span class="home-caption">
-                    <span>Cool Blogs and</span>
-                    <span class="home-text3">Projects</span>
-                    <span>about</span>
-                    <span class="home-text5">technology</span>
-                    <span>.</span>
-                  </span>
-                </header>
-                <div class="home-buttons">
-                  <div class="home-get-started button">
-                    <span class="home-text7">Projects</span>
-                  </div>
-                  <a href="blog.html" class="home-navlink">
-                    <div class="home-get-started1 button">
-                      <span class="home-text8">Blog</span>
-                    </div>
-                  </a>
-                </div>
-              </main>
-              <div class="home-highlight"></div>
-            </div>
-            <div class="home-image">
-              <img
-                alt="image"
-                src="public/playground_assets/heroimage-1500h.png"
-                class="home-image1"
-              />
-            </div>
-          </div>
-        </section>
-        <div>
-          <dangerous-html
-            html="<script>
-    /*
-Accordion - Code Embed
-*/
-
-/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
-the Accordions will still work*/
-
-const listenForUrlChangesAccordion = () => {
-      let url = location.href;
-      document.body.addEventListener(
-        'click',
-        () => {
-          requestAnimationFrame(() => {
-            if (url !== location.href) {
-              runAccordionCodeEmbed();
-              url = location.href;
-            }
-          });
-        },
-        true
-      );
-    };
-
-
-const runAccordionCodeEmbed = () => {
-    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
-    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
-    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
-
-    accordionContents.forEach((accordionContent) => {
-        accordionContent.style.display = 'none'; //Hides all accordion contents
-    });
-
-    accordionContainers.forEach((accordionContainer, index) => {
-        accordionContainer.addEventListener('click', () => {
-            accordionContents.forEach((accordionContent) => {
-            accordionContent.style.display = 'none'; //Hides all accordion contents
-            });
-
-            accordionIcons.forEach((accordionIcon) => {
-                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
-            });
-
-            accordionContents[index].style.display = 'flex'; // Shows accordion content
-            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
-        });
-    });
-}
-
-runAccordionCodeEmbed()
-listenForUrlChangesAccordion()
-
-/*
-Here's what the above is doing:
-    1. Selects all accordion containers, contents, and icons
-    2. Hides all accordion contents
-    3. Adds an event listener to each accordion container
-    4. When an accordion container is clicked, it:
-        - Hides all accordion contents
-        - Resets all icon transforms to 0deg (default)
-        - Checks if this container has class 'accordion-open'
-            - If it does, it removes class 'accordion-open'
-            - If it doesn't, it:
-                - Removes class 'accordion-open' from all containers
-                - Adds class 'accordion-open' to this container
-                - Shows accordion content
-                - Rotates accordion icon 180deg
-*/
-</script>"
-          ></dangerous-html>
-        </div>
       </div>
     </div>
   </body>
