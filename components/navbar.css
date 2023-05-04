@@ -117,9 +117,22 @@
   line-height: 24px;
 }
 .navbar-get-started2 {
-  background-color: #2A2A2A;
+  display: flex;
+  text-decoration: none;
+  background-color: #448cff;
 }
 .navbar-text3 {
+  color: rgb(12, 16, 12);
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 24px;
+}
+.navbar-get-started3 {
+  background-color: #2A2A2A;
+}
+.navbar-text4 {
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
@@ -128,11 +141,15 @@
   line-height: 24px;
 }
 
+
 @media(max-width: 991px) {
   .navbar-get-started1 {
     flex: 1;
   }
   .navbar-get-started2 {
+    flex: 1;
+  }
+  .navbar-get-started3 {
     flex: 1;
   }
 }
@@ -166,6 +183,10 @@
     padding-bottom: var(--dl-space-space-unit);
   }
   .navbar-get-started2 {
+    padding-top: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .navbar-get-started3 {
     display: none;
   }
 }

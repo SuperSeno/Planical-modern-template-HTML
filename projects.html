@@ -48,14 +48,184 @@
   </head>
   <body>
     <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
       <link href="./projects.css" rel="stylesheet" />
 
       <div class="projects-container">
-        <img
-          src="public/playground_assets/pexels-photo-1624496.jpeg"
-          alt="image"
-          class="projects-image"
-        />
+        <nav class="navbar-navbar navbar-root-class-name1">
+          <span class="navbar-text">SenoWeb</span>
+          <div class="navbar-nav-content">
+            <div class="navbar-nav-links"></div>
+            <div id="open-mobile-menu" class="navbar-hamburger get-started">
+              <img
+                alt="image"
+                src="public/playground_assets/hamburger-200h.png"
+                class="navbar-image"
+              />
+            </div>
+          </div>
+          <div id="mobile-menu" class="navbar-mobile-menu">
+            <div class="navbar-branding">
+              <img
+                alt="image"
+                src="public/playground_assets/planical7012-ttpb.svg"
+                class="navbar-image1"
+              />
+              <div id="close-mobile-menu" class="navbar-container">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon">
+                  <path
+                    d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="navbar-nav-links1">
+              <span class="nav-link">Features</span>
+              <span class="nav-link">Why us</span>
+              <span class="nav-link">Prices</span>
+              <span class="nav-link">Contact</span>
+            </div>
+            <div class="get-started">
+              <span class="navbar-text1">Get started</span>
+            </div>
+          </div>
+          <div>
+            <dangerous-html
+              html="<script>
+    /*
+Mobile menu - Code Embed
+*/
+
+/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
+the mobile menu will still work*/
+
+const listenForUrlChangesMobileMenu = () => {
+    let url = location.href;
+    document.body.addEventListener('click', () => {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                runMobileMenuCodeEmbed();
+                url = location.href;
+            }
+        });
+    },
+    true
+    );
+};
+
+const runMobileMenuCodeEmbed = () => {
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu')
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu')
+    const openButton = document.querySelector('#open-mobile-menu')
+
+    // On openButton click, set the mobileMenu position left to -100vw
+    openButton &amp;&amp; openButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(0%)'
+    })
+
+    // On closeButton click, set the mobileMenu position to 0vw
+    closeButton &amp;&amp; closeButton.addEventListener('click', function() {
+        mobileMenu.style.transform = 'translateX(100%)'
+    })
+}
+
+runMobileMenuCodeEmbed()
+listenForUrlChangesMobileMenu()
+</script>"
+            ></dangerous-html>
+          </div>
+          <a href="index.html" class="navbar-navlink">
+            <div class="navbar-get-started1 button">
+              <span class="navbar-text2"><span>Home</span></span>
+            </div>
+          </a>
+          <div class="navbar-get-started2 button">
+            <span class="navbar-text3"><span>Projects</span></span>
+          </div>
+          <div class="navbar-get-started3 button">
+            <span class="navbar-text4"><span>Blog</span></span>
+          </div>
+        </nav>
+        <div>
+          <dangerous-html
+            html="<script>
+    /*
+Accordion - Code Embed
+*/
+
+/* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+the Accordions will still work*/
+
+const listenForUrlChangesAccordion = () => {
+      let url = location.href;
+      document.body.addEventListener(
+        'click',
+        () => {
+          requestAnimationFrame(() => {
+            if (url !== location.href) {
+              runAccordionCodeEmbed();
+              url = location.href;
+            }
+          });
+        },
+        true
+      );
+    };
+
+
+const runAccordionCodeEmbed = () => {
+    const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+    const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+    const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+    accordionContents.forEach((accordionContent) => {
+        accordionContent.style.display = 'none'; //Hides all accordion contents
+    });
+
+    accordionContainers.forEach((accordionContainer, index) => {
+        accordionContainer.addEventListener('click', () => {
+            accordionContents.forEach((accordionContent) => {
+            accordionContent.style.display = 'none'; //Hides all accordion contents
+            });
+
+            accordionIcons.forEach((accordionIcon) => {
+                accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+            });
+
+            accordionContents[index].style.display = 'flex'; // Shows accordion content
+            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+        });
+    });
+}
+
+runAccordionCodeEmbed()
+listenForUrlChangesAccordion()
+
+/*
+Here's what the above is doing:
+    1. Selects all accordion containers, contents, and icons
+    2. Hides all accordion contents
+    3. Adds an event listener to each accordion container
+    4. When an accordion container is clicked, it:
+        - Hides all accordion contents
+        - Resets all icon transforms to 0deg (default)
+        - Checks if this container has class 'accordion-open'
+            - If it does, it removes class 'accordion-open'
+            - If it doesn't, it:
+                - Removes class 'accordion-open' from all containers
+                - Adds class 'accordion-open' to this container
+                - Shows accordion content
+                - Rotates accordion icon 180deg
+*/
+</script>"
+          ></dangerous-html>
+        </div>
       </div>
     </div>
   </body>
