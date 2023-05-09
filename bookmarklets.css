@@ -146,6 +146,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .navbar-home {
     flex: 1;
@@ -159,6 +160,7 @@
 }
 @media(max-width: 767px) {
   .navbar-navbar {
+    width: 767px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .navbar-nav-links {
@@ -178,6 +180,7 @@
     padding-bottom: var(--dl-space-space-unit);
   }
   .navbar-get-started1 {
+    width: 83px;
     padding-top: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-unit);
   }

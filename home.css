@@ -146,6 +146,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .navbar-home {
     flex: 1;
@@ -159,6 +160,7 @@
 }
 @media(max-width: 767px) {
   .navbar-navbar {
+    width: 767px;
     padding-bottom: var(--dl-space-space-fourunits);
   }
   .navbar-nav-links {
@@ -178,6 +180,7 @@
     padding-bottom: var(--dl-space-space-unit);
   }
   .navbar-get-started1 {
+    width: 83px;
     padding-top: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-unit);
   }
@@ -243,7 +246,7 @@
   font-family: Poppins;
   font-weight: 600;
 }
-.home-text1 {
+.home-text01 {
   color: var(--dl-color-primary-300);
 }
 .home-caption {
@@ -252,12 +255,12 @@
   font-family: Poppins;
   line-height: 30px;
 }
-.home-text3 {
+.home-text03 {
   color: var(--dl-color-primary-300);
   font-style: normal;
   font-weight: 800;
 }
-.home-text5 {
+.home-text05 {
   color: var(--dl-color-gray-900);
   font-style: normal;
   font-weight: 800;
@@ -276,7 +279,7 @@
   text-decoration: none;
   background-color: #448cff;
 }
-.home-text7 {
+.home-text07 {
   color: rgb(12, 16, 12);
   font-size: 16px;
   font-style: normal;
@@ -291,7 +294,7 @@
   text-decoration: none;
   background-color: #2A2A2A;
 }
-.home-text8 {
+.home-text08 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
@@ -301,11 +304,25 @@
 }
 .home-highlight {
   gap: var(--dl-space-space-unit);
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   opacity: 0;
   align-items: center;
   flex-direction: row;
+}
+.home-navlink2 {
+  display: contents;
+}
+.home-get-started2 {
+  text-decoration: none;
+  background-color: #2A2A2A;
+}
+.home-text09 {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 24px;
 }
 .home-image {
   border: 2px dashed rgba(120, 120, 120, 0.4);
@@ -352,6 +369,9 @@
     width: 100%;
     flex-direction: column;
   }
+  .home-get-started2 {
+    flex: 1;
+  }
   .home-image {
     width: 100%;
     display: flex;
@@ -382,8 +402,14 @@
   .home-get-started1 {
     display: none;
   }
+  .home-get-started2 {
+    display: none;
+  }
 }
 @media(max-width: 479px) {
+  .home-content {
+    height: 521px;
+  }
   .home-header {
     align-items: flex-start;
   }
@@ -391,6 +417,6 @@
     max-width: 280px;
   }
   .home-get-started {
-    width: 318px;
+    width: 266px;
   }
 }

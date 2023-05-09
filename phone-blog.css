@@ -189,52 +189,191 @@
   }
 }
 
-.page-container {
+.phone-blog-container {
   width: 100%;
   display: flex;
   overflow: auto;
   min-height: 100vh;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--dl-color-gray-background);
 }
-.page-text {
-  color: var(--dl-color-danger-300);
-  font-size: 100px;
-  align-self: center;
+.phone-blog-text {
+  color: var(--dl-color-gray-white);
+  font-size: 30px;
   text-align: center;
+  border-color: var(--dl-color-gray-black);
+  border-width: 100px;
 }
-.page-text3 {
-  font-size: 50px;
-}
-.page-navlink {
-  display: contents;
-}
-.page-home {
-  display: flex;
-  align-self: center;
-  align-items: flex-end;
-  justify-content: flex-start;
-  text-decoration: none;
-  background-color: var(--dl-color-success-300);
-}
-.page-text7 {
-  color: rgb(12, 16, 12);
-  font-size: 16px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500;
-  line-height: 24px;
-}
-@media(max-width: 991px) {
-  .page-home {
-    flex: 1;
+@media(max-width: 1200px) {
+  .phone-blog-text {
+    color: var(--dl-color-gray-900);
+    font-size: 30px;
+    text-align: center;
+  }
+  .phone-blog-text01 {
+    font-size: 30px;
+  }
+  .phone-blog-text02 {
+    font-size: 30px;
+  }
+  .phone-blog-text03 {
+    font-size: 30px;
+  }
+  .phone-blog-text04 {
+    font-size: 30px;
+  }
+  .phone-blog-text05 {
+    font-size: 30px;
+  }
+  .phone-blog-text06 {
+    font-size: 30px;
+  }
+  .phone-blog-text07 {
+    font-size: 30px;
+  }
+  .phone-blog-text08 {
+    font-size: 30px;
+  }
+  .phone-blog-text09 {
+    font-size: 30px;
+  }
+  .phone-blog-text10 {
+    font-size: 30px;
+  }
+  .phone-blog-text11 {
+    font-size: 30px;
+  }
+  .phone-blog-text12 {
+    font-size: 30px;
+  }
+  .phone-blog-text13 {
+    font-size: 30px;
+  }
+  .phone-blog-text14 {
+    font-size: 30px;
+  }
+  .phone-blog-text15 {
+    font-size: 30px;
+  }
+  .phone-blog-text16 {
+    font-size: 30px;
+  }
+  .phone-blog-text17 {
+    font-size: 30px;
+  }
+  .phone-blog-text18 {
+    font-size: 30px;
+  }
+  .phone-blog-text19 {
+    font-size: 30px;
+  }
+  .phone-blog-text20 {
+    font-size: 30px;
+  }
+  .phone-blog-text21 {
+    font-size: 30px;
+  }
+  .phone-blog-text22 {
+    font-size: 30px;
+  }
+  .phone-blog-text23 {
+    font-size: 30px;
+  }
+  .phone-blog-text24 {
+    font-size: 30px;
+  }
+  .phone-blog-text25 {
+    font-size: 30px;
+  }
+  .phone-blog-text26 {
+    font-size: 30px;
   }
 }
-@media(max-width: 767px) {
-  .page-home {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
+@media(max-width: 991px) {
+  .phone-blog-text {
+    color: var(--dl-color-gray-900);
+    font-size: 30px;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+  }
+  .phone-blog-text01 {
+    font-size: 30px;
+  }
+  .phone-blog-text02 {
+    font-size: 30px;
+  }
+  .phone-blog-text03 {
+    font-size: 30px;
+  }
+  .phone-blog-text04 {
+    font-size: 30px;
+  }
+  .phone-blog-text05 {
+    font-size: 30px;
+  }
+  .phone-blog-text06 {
+    font-size: 30px;
+  }
+  .phone-blog-text07 {
+    font-size: 30px;
+  }
+  .phone-blog-text08 {
+    font-size: 30px;
+  }
+  .phone-blog-text09 {
+    font-size: 30px;
+  }
+  .phone-blog-text10 {
+    font-size: 30px;
+  }
+  .phone-blog-text11 {
+    font-size: 30px;
+  }
+  .phone-blog-text12 {
+    font-size: 30px;
+  }
+  .phone-blog-text13 {
+    font-size: 30px;
+  }
+  .phone-blog-text14 {
+    font-size: 30px;
+  }
+  .phone-blog-text15 {
+    font-size: 30px;
+  }
+  .phone-blog-text16 {
+    font-size: 30px;
+  }
+  .phone-blog-text17 {
+    font-size: 30px;
+  }
+  .phone-blog-text18 {
+    font-size: 30px;
+  }
+  .phone-blog-text19 {
+    font-size: 30px;
+  }
+  .phone-blog-text20 {
+    font-size: 30px;
+  }
+  .phone-blog-text21 {
+    font-size: 30px;
+  }
+  .phone-blog-text22 {
+    font-size: 30px;
+  }
+  .phone-blog-text23 {
+    font-size: 30px;
+  }
+  .phone-blog-text24 {
+    font-size: 30px;
+  }
+  .phone-blog-text25 {
+    font-size: 30px;
+  }
+  .phone-blog-text26 {
+    font-size: 30px;
   }
 }
