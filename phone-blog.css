@@ -203,7 +203,7 @@
   color: var(--dl-color-gray-white);
   font-size: 30px;
   text-align: center;
-  border-color: var(--dl-color-gray-black);
+  border-color: var(--dl-color-gray-background);
   border-width: 100px;
 }
 @media(max-width: 1200px) {
@@ -375,5 +375,10 @@
   }
   .phone-blog-text26 {
     font-size: 30px;
+  }
+}
+@media(max-width: 479px) {
+  .phone-blog-text {
+    border-color: var(--dl-color-gray-background);
   }
 }
